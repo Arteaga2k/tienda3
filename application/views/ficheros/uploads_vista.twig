@@ -1,0 +1,13 @@
+{% extends "_templates/base.twig" %} {% block contenido %}
+
+
+<div class="col-md-12">	
+		<h3>Archivo {{ nombre }} importado correctamente</h3>
+		<hr />		
+		<p>Formato del archivo</p>	
+		<img src="{{ base_url('/uploads/thumbs/') }}/{{ tipo }}" />	
+		<p><a href="{{ site_url('utiles/importa_datos') }}">¿Desea importar otro fichero?</a></p>	
+	
+	{% endblock %}
+	
+	
